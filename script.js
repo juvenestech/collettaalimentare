@@ -13,7 +13,7 @@
   const GOOGLE_SCOPES = "openid email profile";
   const GOOGLE_AUTH_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth";
   const GOOGLE_REDIRECT_URI =
-    "https://n8nb.lycoris.it/webhook/juvenes/collettaalimentare/callback";
+    "https://n8n.delugan.net/webhook/juvenes/collettaalimentare/callback";
 
   const fullDateFormatter = new Intl.DateTimeFormat("it-IT", {
     weekday: "long",
@@ -375,7 +375,7 @@
 
   async function fetchAvailabilityData() {
     const endpoint =
-      "https://n8nb.lycoris.it/webhook/juvenes/collettaalimentare/slots";
+      "https://n8n.delugan.net/webhook/juvenes/collettaalimentare/slots";
 
     const response = await fetch(endpoint, {
       headers: {
